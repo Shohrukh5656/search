@@ -7,7 +7,7 @@ import (
 )
 
 func TestAll_user(t *testing.T) {
-	ch := All(context.Background(), "Lorem", []string{"../../data/test.txt"})
+	ch := All(context.Background(), "German", []string{"../../data/test.txt"})
 	results, ok := <-ch
 	if !ok {
 		t.Errorf("error: %v", ok)
